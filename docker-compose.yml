@@ -18,8 +18,6 @@ services:
       - "10999:10999/udp"
     environment:
       - SHARD_NAME=Master
-      - CLUSTER_NAME=MyDediServer
-    
     # These allow to stdin when attaching to the container via `docker attach`
     # Any server commands should be sent to the master shard as it manages its slaves (Caves)
     stdin_open: true
